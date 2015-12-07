@@ -1,0 +1,355 @@
+<html>
+<body>
+
+
+<form>
+<?php
+$len=$_GET['numbevents'];
+for($i=0;$i<$len;$i++)
+{
+echo
+"Event Code:$i<br>
+Event name:<input name='storyname'/>
+
+Event Desccription:<br><textarea rows='10' cols='50' name='desc'></textarea><br>
+warrior<br>
+A<br><textarea rows='10' cols='50' name='warriorA'></textarea> <br>
+Stat to use
+<select name='Astatwar'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+
+<select name='Againwar'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Ariskwar'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Achriskwar'>
+  <option value='ch1'>1</option>
+  <option value='ch2'>2</option>
+  <option value='ch3'>3</option>
+</select><br>
+
+
+
+
+
+
+B<br><textarea rows='10' cols='50' name='warriorB'></textarea><br>
+<select name='Bstatwar'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Bgainwar'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Briskwar'>
+   <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Bchriskwar'>
+  <option value='ch1'>1</option>
+  <option value='ch2'>2</option>
+  <option value='ch3'>3</option>
+</select><br>
+
+
+C<br><textarea rows='10' cols='50' name='warriorC'></textarea><br>
+<select name='Cstatwar'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Cgainwar'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Criskwar'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+
+
+D<br><textarea rows='10' cols='50' name='warriorD'></textarea><br>
+<select name='Dstatwar'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Dgainwar'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select>
+<br>
+<select name='Driskwar'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+<select name='Dchriskwar'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+
+
+mage
+<br>
+A<br><textarea rows='10' cols='50' name='mageA'></textarea>
+
+<select name='Astatmage'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Againmage'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Ariskmage'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Achriskmage'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+
+B<br><textarea rows='10' cols='50' name='mageB'></textarea>
+
+<select name='Bstatmage'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Bgainmage'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select>
+<br>
+<select name='Briskmage'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Bchriskmage'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+
+
+C<br><textarea rows='10' cols='50' name='mageC'></textarea>
+
+
+<select name='Cstatmage'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Cgainmage'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Criskmage'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Cchriskmage'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+
+D<br><textarea rows='10' cols='50' name='mageD'></textarea>
+<select name='Dstatmage'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Dgainmage'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Driskmage'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Dchriskmage'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+
+
+rogue
+
+A<br><textarea rows='10' cols='50' name='rogueA'></textarea>
+<select name='Astatrogue'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Againrogue'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Ariskrogue'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Achriskrogue'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+
+B<br><textarea rows='10' cols='50't name='rogueB'></textarea>
+<select name='Bstatrogue'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Bgainrogue'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select>
+<br>
+<select name='Briskrogue'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Bchriskrogue'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select>
+<br>
+C<br><textarea rows='10' cols='50' name='rogueC'></textarea>
+
+<select name='Cstatrogue'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Cgainrogue'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Criskrogue'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Cchriskrogue'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+D<br><textarea rows='10' cols='50' name='rogueD'></textarea>
+
+
+
+D<br><textarea rows='10' cols='50' name='rogueD'></textarea>
+<select name='Dstatrogue'>
+  <option value='str'>Str</option>
+  <option value='int'>Int</option>
+  <option value='agi'>Agi</option>
+</select><br>
+<select name='Dgainrogue'>
+  <option value='str_add_1'>Add +1 to Str</option>
+  <option value='int_add_1'>Add +1 to Int</option>
+  <option value='agi_add_1'>Add +1 to Agi</option>
+  <option value='sta_add_1'>Add +1 to Sta</option>
+</select><br>
+
+<select name='Driskrogue'>
+  <option value='dmg1'>dmg-1</option>
+  <option value='dmg2'>dmg-2</option>
+  <option value='dmg3'>dmg-3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+<select name='Dchriskrogue'>
+  <option value='dmg1'>1</option>
+  <option value='dmg2'>2</option>
+  <option value='dmg3'>3</option>
+  <option value='move0'>No Movement</option>
+</select><br>
+";
+}
+
+?>
+
+</form>
+</body>
+</html>
